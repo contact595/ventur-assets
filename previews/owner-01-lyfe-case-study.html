@@ -5,146 +5,156 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>From 0 to #13 in 90 Days</title>
 <style type="text/css">
-  body { margin:0; padding:0; background-color:#f4f4f0; font-family:Arial, sans-serif; }
-  table { border-collapse:collapse; }
-  img { display:block; border:0; outline:none; text-decoration:none; }
+  body { margin:0; padding:0; background-color:#f4f4f0; font-family:Arial, sans-serif; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+  table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+  img { display:block; border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; }
   a { color:#c6a885; text-decoration:none; }
-  a:hover { text-decoration:underline; }
 
-  @media only screen and (max-width:600px) {
-    .email-wrapper { width:100% !important; }
-    .mobile-padding { padding-left:20px !important; padding-right:20px !important; }
-    .hero-text { font-size:30px !important; line-height:38px !important; }
-    .stat-cell { display:block !important; width:100% !important; text-align:center !important; padding-bottom:24px !important; }
-    .stat-divider { display:none !important; }
-    .screenshot { width:100% !important; height:auto !important; }
-    .sig-photo { width:64px !important; height:64px !important; }
-    .sig-photo-td { min-width:70px !important; padding-right:14px !important; }
-    .nowrap { white-space:nowrap !important; }
+  @media only screen and (max-width:560px) {
+    /* Wrapper */
+    .email-wrapper   { width:100% !important; }
+    .outer-pad       { padding:16px 0 24px !important; }
+
+    /* Sections */
+    .hero-pad        { padding:32px 20px 28px !important; }
+    .stats-pad       { padding:24px 20px !important; }
+    .body-pad        { padding:28px 20px 24px !important; }
+    .sig-pad         { padding:0 20px 32px !important; }
+    .foot-pad        { padding:16px 20px !important; }
+
+    /* Hero */
+    .hero-eyebrow    { font-size:10px !important; }
+    .hero-h1         { font-size:28px !important; line-height:36px !important; }
+    .hero-sub        { font-size:14px !important; line-height:22px !important; }
+
+    /* Stats — stack vertically */
+    .stats-table     { display:block !important; width:100% !important; }
+    .stats-row       { display:block !important; width:100% !important; }
+    .stat-cell       { display:block !important; width:100% !important; text-align:left !important;
+                       padding:0 0 20px 0 !important; border-bottom:1px solid #2a2a2a !important; margin-bottom:20px; }
+    .stat-last       { display:block !important; width:100% !important; text-align:left !important;
+                       padding:0 !important; }
+    .stat-divider    { display:none !important; width:0 !important; overflow:hidden !important; }
+    .stat-number     { font-size:32px !important; }
+
+    /* Screenshots */
+    .screenshot      { width:100% !important; max-width:100% !important; height:auto !important; border-radius:6px !important; }
+
+    /* CTA button */
+    .cta-btn         { display:block !important; text-align:center !important; padding:14px 20px !important; }
+
+    /* Social links — 2 per row */
+    .social-table    { display:block !important; width:100% !important; }
+    .social-row      { display:block !important; width:100% !important; }
+    .social-cell     { display:inline-block !important; width:45% !important; padding:0 0 8px 0 !important; }
+
+    /* Signature */
+    .sig-photo       { width:64px !important; height:64px !important; }
+    .sig-photo-td    { min-width:72px !important; padding-right:14px !important; }
+    .sig-name        { font-size:16px !important; }
   }
 </style>
 </head>
 <body>
 <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f4f4f0">
-<tr><td align="center" style="padding:32px 16px 40px;">
+<tr><td align="center" class="outer-pad" style="padding:32px 16px 40px;">
 
   <table class="email-wrapper" width="520" cellpadding="0" cellspacing="0" border="0" style="max-width:520px; width:100%;">
 
-    <!-- LOGO / BRAND BAR -->
+    <!-- BRAND BAR -->
     <tr>
-      <td align="center" style="padding-bottom:28px;">
-        <p style="margin:0; font-family:Georgia, serif; font-size:13px; letter-spacing:0.18em; text-transform:uppercase; color:#999999;">VENTUR MANAGEMENT</p>
+      <td align="center" style="padding-bottom:24px;">
+        <p style="margin:0; font-family:Georgia, serif; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:#aaaaaa;">VENTUR MANAGEMENT</p>
       </td>
     </tr>
 
-    <!-- DARK HERO BLOCK -->
+    <!-- DARK HERO -->
     <tr>
-      <td bgcolor="#111111" style="border-radius:12px 12px 0 0; padding:44px 44px 40px;">
-        <p style="margin:0 0 12px 0; font-family:Arial, sans-serif; font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:#c6a885;">Case Study · Lyfe Resort, Hollywood FL</p>
-        <h1 class="hero-text" style="margin:0 0 20px 0; font-family:Georgia, serif; font-size:36px; line-height:44px; font-weight:normal; color:#ffffff;">#13 out of 1,180 properties.<br>In 90 days.</h1>
-        <p style="margin:0; font-family:Arial, sans-serif; font-size:15px; line-height:24px; color:#aaaaaa;">We took two units at Lyfe Resort from zero visibility to top&nbsp;2% on Booking.com. Here's what the numbers look like — and why your property could be next.</p>
+      <td bgcolor="#111111" class="hero-pad" style="border-radius:12px 12px 0 0; padding:44px 44px 38px;">
+        <p class="hero-eyebrow" style="margin:0 0 14px 0; font-family:Arial, sans-serif; font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:#c6a885;">Case Study &nbsp;·&nbsp; Lyfe Resort, Hollywood FL</p>
+        <h1 class="hero-h1" style="margin:0 0 18px 0; font-family:Georgia, serif; font-size:36px; line-height:46px; font-weight:normal; color:#ffffff;">#13 out of 1,180 properties.<br>In 90 days.</h1>
+        <p class="hero-sub" style="margin:0; font-family:Arial, sans-serif; font-size:15px; line-height:25px; color:#aaaaaa;">We took two units at Lyfe Resort from zero visibility to top 2% on Booking.com. Here's what the numbers look like — and why your property could be next.</p>
       </td>
     </tr>
 
     <!-- STATS ROW -->
     <tr>
-      <td bgcolor="#1a1a1a" style="border-radius:0; padding:32px 44px;">
-        <table width="100%" cellpadding="0" cellspacing="0" border="0">
-          <tr>
-            <!-- Stat 1 -->
-            <td class="stat-cell" valign="top" style="width:33%; padding-right:8px;">
-              <p style="margin:0 0 4px 0; font-family:Arial, sans-serif; font-size:10px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#888888;">Search Views</p>
-              <p style="margin:0 0 2px 0; font-family:Georgia, serif; font-size:28px; font-weight:bold; color:#ffffff; line-height:1;">1,067,906</p>
-              <p style="margin:0; font-family:Arial, sans-serif; font-size:11px; color:#c6a885;">↑ in 90 days</p>
+      <td bgcolor="#1a1a1a" class="stats-pad" style="padding:30px 44px;">
+        <table class="stats-table" width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr class="stats-row">
+            <td class="stat-cell" valign="middle" style="width:30%; padding-right:4px;">
+              <p style="margin:0 0 3px 0; font-family:Arial, sans-serif; font-size:10px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#777777;">Search Views</p>
+              <p class="stat-number" style="margin:0 0 3px 0; font-family:Georgia, serif; font-size:26px; font-weight:bold; color:#ffffff; line-height:1.1;">1,067,906</p>
+              <p style="margin:0; font-family:Arial, sans-serif; font-size:11px; color:#c6a885;">&#8593; in 90 days</p>
             </td>
-            <!-- Divider -->
-            <td class="stat-divider" width="1" bgcolor="#333333" style="padding:0 16px;"><img src="https://raw.githubusercontent.com/contact595/ventur-assets/main/images/simon-headshot.jpg" width="1" height="1" alt="" style="visibility:hidden; width:1px; height:60px; display:block;"></td>
-            <!-- Stat 2 -->
-            <td class="stat-cell" valign="top" style="width:33%; padding:0 8px; text-align:center;">
-              <p style="margin:0 0 4px 0; font-family:Arial, sans-serif; font-size:10px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#888888;">Page Views</p>
-              <p style="margin:0 0 2px 0; font-family:Georgia, serif; font-size:28px; font-weight:bold; color:#ffffff; line-height:1;">8,482</p>
-              <p style="margin:0; font-family:Arial, sans-serif; font-size:11px; color:#c6a885;">↑ in 90 days</p>
+            <td class="stat-divider" width="1" style="background-color:#2e2e2e; padding:0;">&nbsp;</td>
+            <td class="stat-cell" valign="middle" style="width:30%; padding:0 16px; text-align:center;">
+              <p style="margin:0 0 3px 0; font-family:Arial, sans-serif; font-size:10px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#777777;">Page Views</p>
+              <p class="stat-number" style="margin:0 0 3px 0; font-family:Georgia, serif; font-size:26px; font-weight:bold; color:#ffffff; line-height:1.1;">8,482</p>
+              <p style="margin:0; font-family:Arial, sans-serif; font-size:11px; color:#c6a885;">&#8593; in 90 days</p>
             </td>
-            <!-- Divider -->
-            <td class="stat-divider" width="1" bgcolor="#333333" style="padding:0 16px;"><img src="https://raw.githubusercontent.com/contact595/ventur-assets/main/images/simon-headshot.jpg" width="1" height="1" alt="" style="visibility:hidden; width:1px; height:60px; display:block;"></td>
-            <!-- Stat 3 -->
-            <td class="stat-cell" valign="top" style="width:33%; padding-left:8px; text-align:right;">
-              <p style="margin:0 0 4px 0; font-family:Arial, sans-serif; font-size:10px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#888888;">Bookings</p>
-              <p style="margin:0 0 2px 0; font-family:Georgia, serif; font-size:28px; font-weight:bold; color:#ffffff; line-height:1;">88</p>
-              <p style="margin:0; font-family:Arial, sans-serif; font-size:11px; color:#c6a885;">↑ in 90 days</p>
+            <td class="stat-divider" width="1" style="background-color:#2e2e2e; padding:0;">&nbsp;</td>
+            <td class="stat-last" valign="middle" style="width:30%; padding-left:4px; text-align:right;">
+              <p style="margin:0 0 3px 0; font-family:Arial, sans-serif; font-size:10px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#777777;">Bookings</p>
+              <p class="stat-number" style="margin:0 0 3px 0; font-family:Georgia, serif; font-size:26px; font-weight:bold; color:#ffffff; line-height:1.1;">88</p>
+              <p style="margin:0; font-family:Arial, sans-serif; font-size:11px; color:#c6a885;">&#8593; in 90 days</p>
             </td>
           </tr>
         </table>
       </td>
     </tr>
 
-    <!-- GOLD ACCENT BAR -->
+    <!-- GOLD BAR -->
     <tr>
-      <td height="4" bgcolor="#c6a885" style="border-radius:0; font-size:0; line-height:0;">&nbsp;</td>
+      <td height="4" bgcolor="#c6a885" style="font-size:0; line-height:0;">&nbsp;</td>
     </tr>
 
     <!-- WHITE BODY -->
     <tr>
-      <td bgcolor="#ffffff" style="padding:40px 44px 36px;" class="mobile-padding">
+      <td bgcolor="#ffffff" class="body-pad" style="padding:40px 44px 32px;">
 
-        <!-- Intro copy -->
-        <p style="margin:0 0 20px 0; font-family:Georgia, serif; font-size:17px; line-height:27px; color:#111111;">When we listed these units, Booking.com had never seen them before. No reviews, no history, no ranking.</p>
-        <p style="margin:0 0 28px 0; font-family:Arial, sans-serif; font-size:14px; line-height:23px; color:#555555;">Within 90 days, they reached <strong style="color:#111111;">#13 out of 1,180 properties</strong> in Hollywood, FL — putting them ahead of 98% of the competition in search results. Here's what that looked like:</p>
+        <p style="margin:0 0 18px 0; font-family:Georgia, serif; font-size:17px; line-height:28px; color:#111111;">When we listed these units, Booking.com had never seen them before. No reviews, no history, no ranking.</p>
+        <p style="margin:0 0 28px 0; font-family:Arial, sans-serif; font-size:14px; line-height:24px; color:#555555;">Within 90 days they reached <strong style="color:#111111;">#13 out of 1,180 properties</strong> in Hollywood — putting them ahead of 98% of the competition. Here's what that looked like:</p>
 
-        <!-- Screenshot 1 — Performance Chart -->
-        <p style="margin:0 0 10px 0; font-family:Arial, sans-serif; font-size:11px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#999999;">Search Traffic Growth · Last 90 Days</p>
-        <img class="screenshot" src="https://raw.githubusercontent.com/contact595/ventur-assets/main/images/lyfe-chart-1.jpg" width="432" alt="Booking.com performance chart showing rapid growth from March to June" style="width:100%; max-width:432px; height:auto; border-radius:8px; border:1px solid #eeeeee;">
+        <!-- Screenshot 1 -->
+        <p style="margin:0 0 8px 0; font-family:Arial, sans-serif; font-size:10px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#aaaaaa;">Search Traffic Growth &nbsp;·&nbsp; Last 90 Days</p>
+        <img class="screenshot" src="https://raw.githubusercontent.com/contact595/ventur-assets/main/images/lyfe-chart-1.jpg" width="432" alt="Booking.com traffic chart — rapid growth from March to June" style="width:100%; max-width:432px; height:auto; border-radius:8px; border:1px solid #eeeeee;">
 
-        <p style="margin:24px 0; font-family:Arial, sans-serif; font-size:14px; line-height:23px; color:#555555;">The chart says it all — a slow warmup in March, then we hit the algorithm right and the graph went vertical. <strong style="color:#111111;">Over 1 million search impressions</strong> in a single quarter.</p>
+        <p style="margin:22px 0; font-family:Arial, sans-serif; font-size:14px; line-height:24px; color:#555555;">The chart says it all — a slow warmup in March, then we hit the algorithm right and the graph went vertical. <strong style="color:#111111;">Over 1 million search impressions</strong> in a single quarter.</p>
 
-        <!-- Screenshot 2 — Ranking Dashboard -->
-        <p style="margin:0 0 10px 0; font-family:Arial, sans-serif; font-size:11px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#999999;">Ranking Dashboard · Booking.com</p>
-        <img class="screenshot" src="https://raw.githubusercontent.com/contact595/ventur-assets/main/images/lyfe-chart-2.jpg" width="432" alt="Booking.com ranking dashboard showing #13 of 1180 properties" style="width:100%; max-width:432px; height:auto; border-radius:8px; border:1px solid #eeeeee;">
+        <!-- Screenshot 2 -->
+        <p style="margin:0 0 8px 0; font-family:Arial, sans-serif; font-size:10px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#aaaaaa;">Search Ranking Dashboard &nbsp;·&nbsp; Booking.com</p>
+        <img class="screenshot" src="https://raw.githubusercontent.com/contact595/ventur-assets/main/images/lyfe-chart-2.jpg" width="432" alt="Booking.com ranking: #13 of 1180 properties, better than 98%" style="width:100%; max-width:432px; height:auto; border-radius:8px; border:1px solid #eeeeee;">
 
         <!-- How we did it -->
-        <p style="margin:28px 0 16px 0; font-family:Georgia, serif; font-size:18px; color:#111111; font-weight:normal;">How we did it</p>
+        <p style="margin:28px 0 14px 0; font-family:Georgia, serif; font-size:18px; color:#111111; font-weight:normal;">How we did it</p>
+
         <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:24px;">
           <tr>
-            <td width="24" valign="top" style="padding-top:2px;">
-              <div style="width:6px; height:6px; border-radius:50%; background-color:#c6a885; margin-top:7px;"></div>
-            </td>
-            <td style="padding-bottom:12px;">
-              <p style="margin:0; font-family:Arial, sans-serif; font-size:14px; line-height:22px; color:#444444;"><strong style="color:#111111;">Listing optimization</strong> — Professional photography, keyword-rich descriptions, and a complete amenity profile from day one.</p>
-            </td>
+            <td width="20" valign="top" style="padding-top:1px;"><div style="width:6px; height:6px; border-radius:50%; background-color:#c6a885; margin-top:8px;"></div></td>
+            <td style="padding-bottom:12px; font-family:Arial, sans-serif; font-size:14px; line-height:22px; color:#444444;"><strong style="color:#111111;">Listing optimization</strong> — Professional photography, keyword-rich descriptions, and a complete amenity profile from day one.</td>
           </tr>
           <tr>
-            <td width="24" valign="top" style="padding-top:2px;">
-              <div style="width:6px; height:6px; border-radius:50%; background-color:#c6a885; margin-top:7px;"></div>
-            </td>
-            <td style="padding-bottom:12px;">
-              <p style="margin:0; font-family:Arial, sans-serif; font-size:14px; line-height:22px; color:#444444;"><strong style="color:#111111;">Dynamic pricing</strong> — We adjust rates daily based on demand, competitor pricing, and local events — never leaving revenue on the table.</p>
-            </td>
+            <td width="20" valign="top" style="padding-top:1px;"><div style="width:6px; height:6px; border-radius:50%; background-color:#c6a885; margin-top:8px;"></div></td>
+            <td style="padding-bottom:12px; font-family:Arial, sans-serif; font-size:14px; line-height:22px; color:#444444;"><strong style="color:#111111;">Dynamic pricing</strong> — Rates adjusted daily based on demand, competitor pricing, and local events — never leaving money on the table.</td>
           </tr>
           <tr>
-            <td width="24" valign="top" style="padding-top:2px;">
-              <div style="width:6px; height:6px; border-radius:50%; background-color:#c6a885; margin-top:7px;"></div>
-            </td>
-            <td style="padding-bottom:12px;">
-              <p style="margin:0; font-family:Arial, sans-serif; font-size:14px; line-height:22px; color:#444444;"><strong style="color:#111111;">5-star guest experience</strong> — Fast responses, seamless check-in, and hospitality that generates the reviews that push the algorithm.</p>
-            </td>
+            <td width="20" valign="top" style="padding-top:1px;"><div style="width:6px; height:6px; border-radius:50%; background-color:#c6a885; margin-top:8px;"></div></td>
+            <td style="padding-bottom:12px; font-family:Arial, sans-serif; font-size:14px; line-height:22px; color:#444444;"><strong style="color:#111111;">5-star guest experience</strong> — Fast responses, seamless check-in, and hospitality that generates the reviews the algorithm rewards.</td>
           </tr>
           <tr>
-            <td width="24" valign="top" style="padding-top:2px;">
-              <div style="width:6px; height:6px; border-radius:50%; background-color:#c6a885; margin-top:7px;"></div>
-            </td>
-            <td>
-              <p style="margin:0; font-family:Arial, sans-serif; font-size:14px; line-height:22px; color:#444444;"><strong style="color:#111111;">Multi-platform distribution</strong> — Airbnb, Booking.com, VRBO, and direct bookings. Your property is everywhere guests are looking.</p>
-            </td>
+            <td width="20" valign="top" style="padding-top:1px;"><div style="width:6px; height:6px; border-radius:50%; background-color:#c6a885; margin-top:8px;"></div></td>
+            <td style="font-family:Arial, sans-serif; font-size:14px; line-height:22px; color:#444444;"><strong style="color:#111111;">Multi-platform distribution</strong> — Airbnb, Booking.com, VRBO, and direct. Your property is everywhere guests search.</td>
           </tr>
         </table>
 
-        <!-- FOMO CTA block -->
-        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f9f6f1; border-left:3px solid #c6a885; border-radius:0 8px 8px 0; margin-bottom:32px;">
+        <!-- FOMO CTA -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f9f6f1; border-left:3px solid #c6a885; border-radius:0 8px 8px 0; margin-bottom:8px;">
           <tr>
-            <td style="padding:20px 24px;">
+            <td style="padding:20px 22px;">
               <p style="margin:0 0 8px 0; font-family:Georgia, serif; font-size:17px; color:#111111;">We're not stopping there.</p>
-              <p style="margin:0 0 16px 0; font-family:Arial, sans-serif; font-size:13px; line-height:21px; color:#666666;">We're selective about the properties we take on — and the spots in South Florida are limited. If you own a unit in the area, now is the time to have the conversation.</p>
-              <a href="https://calendly.com/contact-ventur/introduction-meeting-ventur-property-management" style="display:inline-block; background-color:#111111; color:#ffffff; font-family:Arial, sans-serif; font-size:12px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:12px 28px; border-radius:4px; text-decoration:none;">Schedule a Meeting &rarr;</a>
+              <p style="margin:0 0 18px 0; font-family:Arial, sans-serif; font-size:13px; line-height:21px; color:#666666;">We're selective about the properties we take on — spots in South Florida are limited. If you own a unit in the area, now is the time.</p>
+              <a href="https://calendly.com/contact-ventur/introduction-meeting-ventur-property-management" class="cta-btn" style="display:inline-block; background-color:#111111; color:#ffffff; font-family:Arial, sans-serif; font-size:12px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:13px 28px; border-radius:4px; text-decoration:none;">Schedule a Meeting &nbsp;&rarr;</a>
             </td>
           </tr>
         </table>
@@ -154,36 +164,37 @@
 
     <!-- SIGNATURE -->
     <tr>
-      <td bgcolor="#ffffff" style="padding:0 44px 40px;" class="mobile-padding">
-        <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-top:1px solid #eeeeee; padding-top:28px; margin-top:0;">
+      <td bgcolor="#ffffff" class="sig-pad" style="padding:0 44px 40px;">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
-            <td style="padding-top:28px;">
+            <td style="padding-top:28px; border-top:1px solid #eeeeee;">
               <table cellpadding="0" cellspacing="0" border="0">
                 <tr>
                   <td class="sig-photo-td" width="90" valign="top" style="padding-right:20px; min-width:90px;">
                     <img class="sig-photo" src="https://raw.githubusercontent.com/contact595/ventur-assets/main/images/simon-headshot.jpg" width="80" height="80" alt="Simon De Paz" style="display:block; border-radius:50%;">
                   </td>
                   <td valign="top">
-                    <p style="margin:0 0 3px 0; font-family:Georgia, serif; font-size:18px; color:#111111; font-weight:normal;">Simon De Paz</p>
-                    <p style="margin:0 0 2px 0; font-family:Arial, sans-serif; font-size:10px; font-weight:700; letter-spacing:0.13em; text-transform:uppercase; color:#c6a885;">Founder &middot; Ventur Management</p>
-                    <p style="margin:0 0 10px 0; font-family:Arial, sans-serif; font-size:10px; letter-spacing:0.09em; text-transform:uppercase; color:#bbbbbb;">Short-Term Rental &middot; South Florida</p>
+                    <p class="sig-name" style="margin:0 0 3px 0; font-family:Georgia, serif; font-size:18px; color:#111111; font-weight:normal;">Simon De Paz</p>
+                    <p style="margin:0 0 2px 0; font-family:Arial, sans-serif; font-size:10px; font-weight:700; letter-spacing:0.13em; text-transform:uppercase; color:#c6a885;">Founder &nbsp;&middot;&nbsp; Ventur Management</p>
+                    <p style="margin:0 0 10px 0; font-family:Arial, sans-serif; font-size:10px; letter-spacing:0.09em; text-transform:uppercase; color:#cccccc;">Short-Term Rental &nbsp;&middot;&nbsp; South Florida</p>
                     <table cellpadding="0" cellspacing="0" border="0" style="margin-bottom:10px;">
                       <tr>
                         <td style="padding-right:16px;">
-                          <a href="tel:+17869926618" class="nowrap" style="font-family:Arial, sans-serif; font-size:12px; color:#555555; text-decoration:none; white-space:nowrap;">(786)&nbsp;992&#8209;6618</a>
+                          <a href="tel:+17869926618" style="font-family:Arial, sans-serif; font-size:12px; color:#555555; text-decoration:none; white-space:nowrap;">(786)&nbsp;992&#8209;6618</a>
                         </td>
                         <td>
-                          <a href="mailto:simon@ventur.us" class="nowrap" style="font-family:Arial, sans-serif; font-size:12px; color:#555555; text-decoration:none; white-space:nowrap;">simon@ventur.us</a>
+                          <a href="mailto:simon@ventur.us" style="font-family:Arial, sans-serif; font-size:12px; color:#555555; text-decoration:none; white-space:nowrap;">simon@ventur.us</a>
                         </td>
                       </tr>
                     </table>
-                    <p style="margin:0 0 14px 0; font-family:Georgia, serif; font-size:12px; font-style:italic; color:#999999; border-left:2px solid #c6a885; padding-left:10px; line-height:18px;">&ldquo;Turning properties into top performers.&rdquo;</p>
-                    <table cellpadding="0" cellspacing="0" border="0">
-                      <tr>
-                        <td style="padding-right:16px;"><a href="https://ventur.us" style="font-family:Arial, sans-serif; font-size:12px; color:#c6a885; text-decoration:none;">🌐 Website</a></td>
-                        <td style="padding-right:16px;"><a href="https://instagram.com/venturmanagement" style="font-family:Arial, sans-serif; font-size:12px; color:#c6a885; text-decoration:none;">📸 Instagram</a></td>
-                        <td style="padding-right:16px;"><a href="https://linkedin.com/in/simondepaz" style="font-family:Arial, sans-serif; font-size:12px; color:#c6a885; text-decoration:none;">💼 LinkedIn</a></td>
-                        <td><a href="https://wa.me/17869926618" style="font-family:Arial, sans-serif; font-size:12px; color:#c6a885; text-decoration:none;">💬 WhatsApp</a></td>
+                    <p style="margin:0 0 14px 0; font-family:Georgia, serif; font-size:12px; font-style:italic; color:#999999; border-left:2px solid #c6a885; padding-left:10px; line-height:19px;">&ldquo;Turning properties into top performers.&rdquo;</p>
+                    <!-- Social links: 2x2 on mobile -->
+                    <table class="social-table" cellpadding="0" cellspacing="0" border="0">
+                      <tr class="social-row">
+                        <td class="social-cell" style="padding-right:16px; padding-bottom:0;"><a href="https://ventur.us" style="font-family:Arial, sans-serif; font-size:12px; color:#c6a885; text-decoration:none; white-space:nowrap;">&#127760; Website</a></td>
+                        <td class="social-cell" style="padding-right:16px; padding-bottom:0;"><a href="https://instagram.com/venturmanagement" style="font-family:Arial, sans-serif; font-size:12px; color:#c6a885; text-decoration:none; white-space:nowrap;">&#128248; Instagram</a></td>
+                        <td class="social-cell" style="padding-right:16px; padding-bottom:0;"><a href="https://linkedin.com/in/simondepaz" style="font-family:Arial, sans-serif; font-size:12px; color:#c6a885; text-decoration:none; white-space:nowrap;">&#128188; LinkedIn</a></td>
+                        <td class="social-cell" style="padding-bottom:0;"><a href="https://wa.me/17869926618" style="font-family:Arial, sans-serif; font-size:12px; color:#c6a885; text-decoration:none; white-space:nowrap;">&#128172; WhatsApp</a></td>
                       </tr>
                     </table>
                   </td>
@@ -197,7 +208,7 @@
 
     <!-- FOOTER -->
     <tr>
-      <td bgcolor="#f9f9f9" style="border-radius:0 0 12px 12px; padding:20px 44px;" class="mobile-padding">
+      <td bgcolor="#f5f5f2" class="foot-pad" style="border-radius:0 0 12px 12px; padding:20px 44px;">
         <p style="margin:0; font-family:Arial, sans-serif; font-size:11px; line-height:18px; color:#bbbbbb; text-align:center;">
           Ventur Management LLC &nbsp;&bull;&nbsp; South Florida<br>
           You're receiving this because you expressed interest in short-term rental management.<br>
